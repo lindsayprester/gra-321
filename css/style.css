@@ -12,5 +12,7 @@ h1 {
 }
 
 hr {
-  color: #e8f9fd;
+  color: white;
+  background-color: #c2edda;
+  width: 5px
 }
