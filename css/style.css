@@ -1,17 +1,18 @@
 * {
   background-color: #c2edda;
 }
-
 li {
   font-family: 'Montserrat', sans-serif;
 }
-
 h1 {
   font-family: 'Vollkorn', serif;
   color: #ff1e00;
 }
-
-a {
+hr {
+  height: 3px;
+  color: black;
+}
+a:link {
   color: black;
 }
 a:hover {
