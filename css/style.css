@@ -10,10 +10,10 @@ h1 {
 }
 hr {
   height: 3px;
-  color: black;
+  color: white;
 }
 a {
-  color: black;
+  text-decoration-color: black;
 }
 a:hover {
   color: white;
