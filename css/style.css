@@ -11,8 +11,9 @@ h1 {
   color: #ff1e00;
 }
 
-hr {
+a {
+  color: black;
+}
+a:hover {
   color: white;
-  width: 2px;
-  height: 1px;
 }
