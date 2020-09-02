@@ -10,14 +10,16 @@ li {
 h1 {
   font-family: 'Vollkorn', serif;
   color: #ff1e00;
+  margin-left: 20px;
 }
 hr {
-  height: 3px;
+  height: 10px;
   color: white;
 }
-a {
-  text-decoration-color: black;
+a:link {
+  color: black;
 }
 a:hover {
   color: white;
+  text-decoration: none;
 }
