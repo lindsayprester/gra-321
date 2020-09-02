@@ -1,4 +1,4 @@
-* {
+body {
   background-color: #c2edda;
 }
 li {
@@ -12,7 +12,7 @@ hr {
   height: 3px;
   color: black;
 }
-a:link {
+a {
   color: black;
 }
 a:hover {
