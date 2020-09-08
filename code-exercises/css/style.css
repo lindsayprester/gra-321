@@ -1,6 +1,9 @@
 * {
 
 }
+body {
+  background-color: #c2edda;
+}
 .hoverlink:hover {
   text-decoration: none;
   color: white;
