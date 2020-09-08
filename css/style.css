@@ -15,8 +15,8 @@ hr {
   height: 10px;
   color: white;
 }
-a:active {
-  text-decoration-color: black;
+a:link {
+  color: black;
 }
 a:hover {
   color: white;
