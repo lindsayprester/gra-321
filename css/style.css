@@ -16,7 +16,7 @@ hr {
   color: white;
 }
 a {
-  color: black;
+  text-decoration-color: black;
 }
 a:hover {
   color: white;
