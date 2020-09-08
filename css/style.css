@@ -15,7 +15,7 @@ hr {
   height: 10px;
   color: white;
 }
-a {
+a:active {
   text-decoration-color: black;
 }
 a:hover {
