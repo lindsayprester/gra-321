@@ -5,3 +5,7 @@
   text-decoration: none;
   color: white;
 }
+.boldred-text {
+  font-weight: bold;
+  color: red;
+}
