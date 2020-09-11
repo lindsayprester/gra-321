@@ -41,9 +41,10 @@ p {
 }
 .gallery {
   display:grid;
-  grid-template-columns: repeat(8, auto;);
+  grid-template-columns: repeat(8, 45%;);
   grid-template-rows: repeat(8,auto;);
   grid-gap:15px;
+  position: relative;
 }
 .gallery__img {
   width: 100%;
