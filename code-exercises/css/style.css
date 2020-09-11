@@ -4,11 +4,19 @@
 body {
   background-color: #c2edda;
 }
+h1 {
+  color: #ff1e00;
+  font-family: 'Vollkorn', serif;
+  margin-left: 20px;
+}
+li {
+  font-family: 'Montserrat', sans-serif;
+}
 .hoverlink:hover {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 .boldred-text {
-  font-weight: bold;
   color: #ff1e00;
+  font-weight: bold;
 }
