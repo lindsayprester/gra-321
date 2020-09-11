@@ -5,6 +5,15 @@ body {
   background-color: #c2edda;
   margin-left: 20px;
 }
+button {
+  background-color: black;
+  border:#ff1e00;
+  color: #c2edda;
+  font-family: 'Montserrat', sans-serif;
+}
+button:hover {
+  background-color: #ff1e00;
+}
 h1 {
   color: #ff1e00;
   font-family: 'Vollkorn', serif;
