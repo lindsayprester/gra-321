@@ -20,7 +20,25 @@ p {
   color: white;
   text-decoration: none;
 }
+.hoverlink:active{
+  color: black;
+}
 .boldred-text {
   color: #ff1e00;
   font-weight: bold;
+}
+.bigpara {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: #c2edea;
+}
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #c2edff;
+}
 }
