@@ -12,6 +12,9 @@ h1 {
 li {
   font-family: 'Montserrat', sans-serif;
 }
+p {
+  font-family: 'Montserrat', sans-serif;
+}
 .hoverlink:hover {
   color: white;
   text-decoration: none;
