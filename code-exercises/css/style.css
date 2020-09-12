@@ -30,8 +30,9 @@ p {
 .back-img {
   background-image: url(https://images.unsplash.com/photo-1525253013412-55c1a69a5738?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
   text-align: center;
-  text-margin: 20px;
-  margin: auto;
+  text-decoration-color: white;
+  position: relative;
+  margin-bottom: 20px;
   width: 75%;
   height: 100px;
 }
