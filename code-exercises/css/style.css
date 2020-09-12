@@ -58,7 +58,6 @@ p {
   grid-template-columns: repeat(8, 1fr;);
   grid-template-rows: repeat(9,5vw;);
   grid-gap:20px;
-  position: relative;
 }
 .gallery__img {
   width: 100%;
