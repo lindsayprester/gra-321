@@ -31,7 +31,7 @@ p {
   background-image: url(../img/groupofpupppies.jpeg);
   position: relative;
   width: 75%;
-  height: 300px;
+  height: auto;
 }
 .bigpara {
   font-size: 24px;
@@ -57,6 +57,7 @@ p {
   grid-template-columns: repeat(8, 1fr;);
   grid-template-rows: repeat(9,5vw;);
   grid-gap:20px;
+  margin-top: 200px;
 }
 .gallery__img {
   width: 100%;
