@@ -30,7 +30,6 @@ p {
 .back-img {
   background-image: url(../img/groupofpupppies.jpeg);
   position: relative;
-  margin-bottom: 20px;
   width: 75%;
   height: 300px;
 }
@@ -51,7 +50,6 @@ p {
 .img-text {
   color: white;
   margin-top: 20px
-  position:relative;
 }
 .gallery {
   display:grid;
