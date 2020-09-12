@@ -27,7 +27,7 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 .back-img {
-  background-image: url(tricolordog.jpeg);
+  background-image: image(../img/tricolordog.jpeg);
 }
 .bigpara {
   font-size: 24px;
