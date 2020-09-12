@@ -54,12 +54,12 @@ p {
 
 @media screen and (max-width: 1000px) {
   body {
-    background-color: #c2edea;
+    background-color: #c2edff;
 }
 }
 
 @media screen and (max-width: 500px) {
   body {
-    background-color: #c2edff;
+    background-color: #7dedff;
 }
 }
