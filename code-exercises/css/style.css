@@ -29,7 +29,8 @@ p {
 }
 .back-img {
   background-image: url(../img/groupofpupppies.jpeg);
-  position: relative;
+  background-size: cover;
+  margin: 0, auto;
   width: 75%;
   height: auto;
 }
@@ -50,7 +51,8 @@ p {
 .img-text {
   color: white;
   margin-top: 20px;
-  position: relative;
+  text-align: center;
+  background-color: black;
 }
 .gallery {
   display:grid;
