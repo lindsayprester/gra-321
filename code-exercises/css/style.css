@@ -5,6 +5,7 @@ body {
   background-color: #c2edda;
   margin-left: 30px;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 button {
   background-color: black;
@@ -119,7 +120,13 @@ p {
   font-family: 'Vollkorn', serif;
   padding-top: 80px;
   text-align: center;
-
+}
+.magazine {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 @media screen and (max-width: 1000px) {
   body {
