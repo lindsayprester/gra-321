@@ -1,6 +1,4 @@
-* {
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn:wght@700&display=swap');
 body {
   background-color: #c2edda;
   margin-left: 30px;
@@ -17,7 +15,7 @@ button:hover {
   background-color: #ff1e00;
 }
 }
-h1 {
+h1, .h1 {
   color: #ff1e00;
   font-family: 'Vollkorn', serif;
 }
