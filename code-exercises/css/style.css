@@ -14,11 +14,9 @@ button {
 button:hover {
   background-color: #ff1e00;
 }
-}
-h1, .h1 {
+h1 {
   color: #ff1e00;
-  font-family: 'Vollkorn', serif !important;
-  font-weight: 700;
+  font-family: 'Vollkorn', serif;
 }
 li {
   font-family: 'Montserrat', sans-serif;
