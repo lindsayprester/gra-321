@@ -32,15 +32,15 @@ p{
 .grid{
   display: grid;
   grid-template-columns: 1fr 2.74fr;
-  grid-template-rows: 1012px 675px;
-  grid-column-gap: 87px;
-  grid-row-gap: 27px;
+  grid-template-rows: 70vw 50vw;
+  grid-column-gap: 9.5vw;
+  grid-row-gap: 2.5vw;
 
 }
 .grid-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  margin-top: 57px;
+  margin-top: 5vw;
 }
 .grid-item-2 {
   display: block;
@@ -64,7 +64,7 @@ p{
 }
 .footer {
   position: absolute;
-  right: 63px;
-  padding-top: 57px;
-  padding-bottom: 10px;
+  right: 8vw;
+  padding-top: 3.5vw;
+  padding-bottom: 1vw;
 }
