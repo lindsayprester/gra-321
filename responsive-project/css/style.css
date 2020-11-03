@@ -1,7 +1,139 @@
 * {
 
 }
-
+body {
+  background-color: #FDF7F0;
+}
+footer {
+  text-align: center;
+}
 h1 {
-
+  font-family: 'Piazzolla', serif;
+  Font-weight: 900;
+  Font-size: 36px;
+  Color: black;
+}
+h2 {
+  font-family: 'Piazzolla', serif;
+  Font-weight: bold;
+  Font-size: 30px;
+  Color: black;
+}
+h3 {
+  font-family: 'Piazzolla', serif;
+  Font-weight: bold;
+  Font-size: 24px;
+  Color: black;
+}
+h4 {
+  font-family: 'Piazzolla', serif;
+  Font-weight: 400;
+  Font-size: 20px;
+  Color: black;
+}
+h5 {
+  font-family: 'Piazzolla', serif;
+  Font-weight: 600;
+  Font-size: 18px;
+  Color: black;
+  Line-height: 30px
+}
+h6 {
+  font-family: 'Piazzolla', serif;
+  Font-weight: 400;
+  Font-size: 16px;
+  Color: black;
+  Line-height: 22px
+}
+hr {
+  width: 1px;
+  color: #707070;
+}
+.bar {
+  display:block;
+  padding: 10px;
+  margin: auto;
+  position: relative;
+  background-color: #ECE0DD;
+}
+.bottom-nav {
+  background-color:
+  display: inline-flex;
+  padding: 20px;
+  width:100%;
+  justify-content: space-between;
+}
+.drinks {
+  display: inline-flex;
+  width:30%;
+}
+.drop-down {
+  display: none;
+}
+.hot-menu {
+  display: flex;
+  width: 100%;
+}
+.iced-menu {
+  display: flex;
+  width: 100%;
+}
+.red {
+  color: #651313;
+}
+.font-awesome {
+  font-family:
+}
+.banner {
+  width: 100%;
+  height: auto;
+}
+.body-grid {
+  display: grid;
+  grid-template-columns:
+}
+.logo {
+  display:block;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 68%;
+  height: auto;
+}
+.margin {
+  margin: 20px;
+}
+.menunav-mobile {
+  background-color: #ECE0DD;
+  display: inline-flex;
+}
+.menu-photo {
+  position: relative;
+  width:42%;
+  height: auto;
+  float:right;
+}
+.mobile-nav {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+.prices {
+  display: inline-flex;
+  width: 52%;
+  justify-content: space-around;
+}
+.semibold {
+  font-weight:600;
+}
+.specials {
+  display: block;
+}
+.specials-menu {
+  display: block;
+  width: 100%;
+}
+.underline {
+  text-decoration: underline;
 }
