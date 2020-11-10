@@ -4,68 +4,239 @@
 body {
   background-color: #FDF7F0;
 }
+button {
+  background-color: #A8733B;
+  color: #FDF7F0;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border: none;
+  width: 90%;
+  height: 70px;
+}
 footer {
   text-align: center;
 }
 h1 {
-  font-family: 'Piazzolla', serif;
+  Font-family: 'Piazzolla', serif;
   Font-weight: 900;
   Font-size: 36px;
   Color: black;
+  margin-left: 20px;
 }
 h2 {
-  font-family: 'Piazzolla', serif;
-  Font-weight: bold;
+  Font-family: 'Piazzolla', serif;
+  Font-weight: 700;
   Font-size: 30px;
   Color: black;
 }
 h3 {
-  font-family: 'Piazzolla', serif;
-  Font-weight: bold;
+  Font-family: 'Piazzolla', serif;
+  Font-weight: 700;
   Font-size: 24px;
   Color: black;
 }
 h4 {
   font-family: 'Piazzolla', serif;
-  Font-weight: 400;
-  Font-size: 20px;
-  Color: black;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  line-height: 25px;
 }
 h5 {
-  font-family: 'Piazzolla', serif;
+  Font-family: 'Piazzolla', serif;
   Font-weight: 600;
   Font-size: 18px;
   Color: black;
-  Line-height: 30px
+  line-height: 30px;
 }
 h6 {
-  font-family: 'Piazzolla', serif;
+  Font-family: 'Piazzolla', serif;
   Font-weight: 400;
   Font-size: 16px;
   Color: black;
-  Line-height: 22px
+  line-height: 21px;
 }
 hr {
-  width: 1px;
+  border: .5px solid;
   color: #707070;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.bar {
-  display:block;
-  padding: 10px;
-  margin: auto;
+.header {
+  display: block;
+  width: 100%;
+  align-items: center;
+  white-space: nowrap;
+}
+.charlies_logo {
+  display: block;
+  width: 64%;
+  margin: 20px;
+  height: auto;
+}
+.ham-nav {
+  display: inline;
+  margin: 20px 20px 20px 0px;
+  width: 16%;
   position: relative;
+}
+/* Style the links inside the navigation bar */
+.header a {
+  display: block;
+  color: #651313;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Piazzolla', serif;
+  font-size: 30px;
+}
+
+/* Change the color of links on hover */
+.header a:hover {
   background-color: #ECE0DD;
 }
-.bottom-nav {
-  background-color:
-  display: inline-flex;
+
+/* Slideshow container */
+.slideshow-container {
+  display: flex;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: #3F3E3C;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.sliderbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #FDF7F0;
+  font-size: 15px;
   padding: 20px;
-  width:100%;
-  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ECE0DD;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #6d0328;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*menu*/
+.menu-nav {
+  display: flex;
+  width: 100%;
+  background: #ECE0DD;
+}
+a, .menu-sections {
+  font-family: 'Piazzolla', serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #651313;
+  line-height:60px;
+}
+.menu-sections {
+  display:block;
+  width: 42%;
+  margin: 20px;
+}
+.menuimg {
+  display: block;
+  width: 68%;
+}
+.menu-header {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px 20px 20px 20px;
+  width: 48%;
+}
+h3, .menu-header {
+  line-height: 10px;
+}
+.special-title {
+  font-family: 'Piazzolla', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 13px;
+}
+.special-description {
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+}
+h3, #specials {
+  margin-top: 15px;
+}
+h2, #drinks {
+  padding-top: 5px;
+  line-height: 0px;
+}
+.prices {
+  display: inline-flex;
+  width: 52%;
+  justify-content: space-around;
 }
 .drinks {
   display: inline-flex;
-  width:30%;
+  width:48%;
+  margin-right: 10px;
 }
 .drop-down {
   display: none;
@@ -73,67 +244,63 @@ hr {
 .hot-menu {
   display: flex;
   width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
 }
 .iced-menu {
   display: flex;
   width: 100%;
-}
-.red {
-  color: #651313;
-}
-.font-awesome {
-  font-family:
-}
-.banner {
-  width: 100%;
-  height: auto;
-}
-.body-grid {
-  display: grid;
-  grid-template-columns:
-}
-.logo {
-  display:block;
-  margin-top: 20px;
-  margin-left: 10px;
-  width: 68%;
-  height: auto;
-}
-.margin {
-  margin: 20px;
-}
-.menunav-mobile {
-  background-color: #ECE0DD;
-  display: inline-flex;
-}
-.menu-photo {
-  position: relative;
-  width:42%;
-  height: auto;
-  float:right;
-}
-.mobile-nav {
-  display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
-  vertical-align: middle;
-  line-height: 50px;
+  padding-right: 20px;
 }
-.prices {
-  display: inline-flex;
-  width: 52%;
-  justify-content: space-around;
+.title-1 {
+  Font-family: 'Piazzolla', serif;
+  Font-weight: 600;
+  Font-size: 18px;
+  Color: black;
+  padding-top: 30px;
+  line-height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.semibold {
-  font-weight:600;
+.content {
+  Font-family: 'Piazzolla', serif;
+  Font-weight: 400;
+  Font-size: 18px;
+  Color: black;
+  line-height: 25px;
+  margin-left: 40px;
+  margin-right: 20px;
+  padding-bottom: 20px;
 }
-.specials {
-  display: block;
-}
-.specials-menu {
+/*Locations*/
+.banner {
   display: block;
   width: 100%;
 }
-.underline {
+.bar {
+  display:block;
+  padding: 5px;
+  background-color: #ECE0DD;
+}
+.locationsinfo {
+  display: block;
+  background-color: #ECE0DD;
+}
+.locationlinks {
+  padding: 5px 20px 20px 20px;
+  line-height: 100;
+}
+.margin {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.link {
+  color: #651313;
   text-decoration: underline;
+}
+.fab {
+  color: #651313;
 }
