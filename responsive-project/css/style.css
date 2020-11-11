@@ -5,9 +5,10 @@ body {
   background-color: #FDF7F0;
 }
 button {
+  font-family: 'Piazzolla', serif;
+  font-size: 20px;
   background-color: #A8733B;
   color: #FDF7F0;
-  padding: 20px;
   margin-bottom: 20px;
   text-decoration: none;
   border: none;
@@ -70,7 +71,7 @@ hr {
   white-space: nowrap;
 }
 .charlies_logo {
-  display: block;
+  display: inline-block;
   width: 64%;
   margin: 20px;
   height: auto;
@@ -90,6 +91,7 @@ hr {
   text-decoration: none;
   font-family: 'Piazzolla', serif;
   font-size: 30px;
+  font-weight: 600;
 }
 
 /* Change the color of links on hover */
@@ -128,19 +130,14 @@ hr {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
 /* Caption text */
 .text {
+  Font-family: 'Piazzolla', serif;
   color: #FDF7F0;
-  font-size: 15px;
+  font-size: 20px;
   padding: 20px;
   width: 100%;
-  height: 150px;
+  height: 300px;
 }
 
 /* The dots/bullets/indicators */
@@ -181,14 +178,24 @@ hr {
   width: 100%;
   background: #ECE0DD;
 }
-a, .menu-sections {
+a .menu-sections {
   font-family: 'Piazzolla', serif;
   font-weight: 700;
   font-size: 24px;
   color: #651313;
   line-height:60px;
 }
+.menu-links {
+  color: #651313;
+  font-weight: 700;
+  line-height: 65px;
+}
+.menu-links:hover {
+  color: black;
+}
 .menu-sections {
+  font-family: 'Piazzolla', serif;
+  font-size: 24px;
   display:block;
   width: 42%;
   margin: 20px;
@@ -300,6 +307,9 @@ h2, #drinks {
 .link {
   color: #651313;
   text-decoration: underline;
+}
+.link:hover{
+  color: black;
 }
 .fab {
   color: #651313;

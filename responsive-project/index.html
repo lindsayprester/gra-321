@@ -16,8 +16,7 @@
 <!--Ham menu -->
       <div class="header">
         <img class="charlies_logo" src="./img/charliescafe-logo_black.png" alt="charlie's cafe logo">
-        <a href="javascript:void(0);" class="ham.menu" onclick="myFunction()">
-          <img class="ham-nav" src="./img/hamnav.png" alt="navigation bars"></a>
+        <img href="javascript:void(0);" class="ham-nav ham.menu" onclick="myFunction()" src="./img/hamnav.png" alt="navigation bars">
           <div id="nav-links">
             <a href="#menu">Menu</a>
             <a href="#location">Location</a>
@@ -119,9 +118,9 @@
       <h1>Menu</h1>
       <div class="menu-nav">
         <div class="menu-sections">
-          <a href="#specials">Specials</a><br>
-          <a href="#drinks">Drinks</a><br>
-          <a href="#food">Food</a><br>
+          <a class="menu-links" href="#specials">Specials</a><br>
+          <a class="menu-links" href="#drinks">Drinks</a><br>
+          <a class="menu-links" href="#food">Food</a><br>
         </div>
         <img class="menuimg" src="./img/menu-coffee_square.jpg" alt="lattes">
       </div>
@@ -392,9 +391,9 @@
           <h4>
             <a class="link"href="#">charliescafesm@outlook.com</a><br>
             &nbsp;<br>
-            <a href="instagram.com"><i class="fab fa-instagram"></i> &nbsp; CharliesCafe.ASU</a><br>
+            <a class="link"href="instagram.com"><i class="fab fa-instagram "></i> &nbsp; CharliesCafe.ASU</a><br>
             &nbsp;<br>
-            <a href="https://www.facebook.com/charliescafeasu/" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp; Charlies Cafe</a></h4>
+            <a class="link" href="https://www.facebook.com/charliescafeasu/" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp; Charlies Cafe</a></h4>
           </div>
         <div class="margin">
         <div class="bio-location">
@@ -402,10 +401,10 @@
             Inside ASU
             Biodesign Institute</h3>
           <h4>&nbsp;<br>
-            <div class="link">
+            <a class="link" href="https://goo.gl/maps/PE7acefuC7nHbbqi8" target="_blank">
               727 E Tyler St,
               Tempe, AZ 85281
-            </div>
+            </a>
           </h4>
             &nbsp;<br>
           <h4>
@@ -423,10 +422,10 @@
             Inside ASU
             Hayden Library</h3>
           <h4>&nbsp;<br>
-            <div class="link">
+            <a href="https://goo.gl/maps/A6Fxb7ozXFssYQEA9" target="_blank" class="link">
               300 Orange Mall,
               Tempe, AZ 85281
-            </div>
+            </a>
           </h4>
             &nbsp;<br>
           <h4>
@@ -443,10 +442,10 @@
             Inside ASU
             Design North</h3>
           <h4>&nbsp;<br>
-            <div class="link">
+            <a href="https://goo.gl/maps/yF4dSP1ax2eqwEwU6" target="_blank" class="link">
               810 S Forest Mall,
               Tempe, AZ 85281
-            </div>
+            </a>
           </h4>
           <h4>
             &nbsp;<br>
@@ -477,12 +476,16 @@
       </section>
       &nbsp;
     <footer>
-    <h4 class="link bar"><a href="#header">back to top</a></h4>
+    <h4 class="bar"><a class="link" href="#header">back to top</a></h4>
     <div class="margin">
       <h4><a href="https://www.facebook.com/charliescafeasu/" target="_blank"><i class="fab fa-facebook-square red"></i></a></h4>
-      <h4> Do you love Charlie’s? Tell us about it!<br> <i class="fab fa-yelp"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-google red"></i></h4>
+      <h4> Do you love Charlie’s? Tell us about it!<br>
+        <a href="https://www.yelp.com/biz/charlies-cafe-tempe?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank"><i class="fab fa-yelp"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.google.com/search?q=charlie%27s%20cafe%20google%20review&rlz=1C5CHFA_enUS915US915&oq=charlies+cafe+google+revie&aqs=chrome..69i57j33i22i29i30.5017j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:9&tbm=lcl&rflfq=1&num=10&rldimm=15933294831860921206&lqi=ChxjaGFybGllJ3MgY2FmZSBnb29nbGUgcmV2aWV3IgU4AYgBAVogCg5jaGFybGllJ3MgY2FmZSIOY2hhcmxpZSdzIGNhZmU&phdesc=i2tMiUrG6q8&ved=2ahUKEwix456c8_jsAhXTu54KHQKWCAkQvS4wA3oECAUQKw&rlst=f#lrd=0x872b08dbd45c25f3:0xdd1e6f3b3aa33376,1,,,&rlfi=hd:;si:15933294831860921206,l,ChxjaGFybGllJ3MgY2FmZSBnb29nbGUgcmV2aWV3IgU4AYgBAVogCg5jaGFybGllJ3MgY2FmZSIOY2hhcmxpZSdzIGNhZmU,y,i2tMiUrG6q8;mv:[[33.4214646,-111.9280541],[33.4194281,-111.9373451]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9" target="_blank"><i class="fab fa-google"></i></a>
+      </h4>
       <section id="contact-us">
-        <h4 class="link">Contact us!</h4>
+        <h4><a href="mailto:charliescafesm@outlook.com?subject=Contact Us!"class="link">Contact us!</a></h4>
         <h4>© 2020, Charlie’s Cafe All Rights Reserved</h4>
     </div>
     </section>
