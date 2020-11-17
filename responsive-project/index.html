@@ -16,15 +16,20 @@
 <!--Ham menu -->
       <div class="header">
         <img class="charlies_logo" src="./img/charliescafe-logo_black.png" alt="charlie's cafe logo">
-        <img href="javascript:void(0);" class="ham-nav ham.menu" onclick="myFunction()" src="./img/hamnav.png" alt="navigation bars">
-          <div id="nav-links">
-            <a href="#menu">Menu</a>
-            <a href="#location">Location</a>
-            <a href="#our-story">Our Story</a>
-            <a href="#contact-us">Contact Us</a>
-          </div>
+        <img href="javascript:void(0);" class="ham-nav" onclick="myFunction()" src="./img/hamnav.png" alt="navigation bars">
+        <div id="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#locations">Location</a>
+          <a href="#our-story">Our Story</a>
+          <a href="#contact-us">Contact Us</a>
         </div>
-      <div>
+        <div class="desktop-nav">
+          <a href="#menu">Menu</a>
+          <a href="#location">Location</a>
+          <a href="#our-story">Our Story</a>
+          <a href="#contact-us">Contact Us</a>
+        </div>
+      </div>
 <!--Java script for ham menu -->
       <script>
         function myFunction() {
@@ -116,6 +121,7 @@
 <!--Menu-->
     <section id="menu">
       <h1>Menu</h1>
+      <div class="menu-class">
       <div class="menu-nav">
         <div class="menu-sections">
           <a class="menu-links" href="#specials">Specials</a><br>
@@ -124,134 +130,68 @@
         </div>
         <img class="menuimg" src="./img/menu-coffee_square.jpg" alt="lattes">
       </div>
-      <section id="specials">
-        <div class="menu-header">
-          <h3>Specials<h3>
-          <h6>All specials are either double or triple shots</h6>
-        </div>
-          <div class="special-title">
-            Thai Iced Cappuccino
-          </div>
-          <div class="special-description">
-            <h4>Channel your inner exotic
-            spirit with a double shot of
-            espresso finished with
-            sweetened condensed milk</h4>
-          </div>
-          <div class="special-title">
-            Joyous Almond Latte
-          </div>
-          <div class="special-description">
-            <h4>Imagine drinking the candy
-            bar…only better</h4>
-          </div>
-          <div class="special-title">
-            Banana Nut Mocha
-          </div>
-          <div class="special-description">
-            <h4> You’ll go bananas!! It’s so
-            yum... Yep, just yum</h4>
-          </div>
-        </div>
-      </section>
-      <hr>
-      <section id="drinks">
-        <h2 style="margin-left: 20px;">Drinks<h2>
-        <div class="menu-header">
-          <h3>Iced<h3>
-          <h6>$1 refills iced teas and iced coffees when
-          you keep your cup!</h6>
-        </div>
-        <div class="iced-menu">
-          <div class="drinks">
-            <h5>
-              &nbsp;<br>
-              Coffee <br>
-              Americano<br>
-              Latte<br>
-              Mocha<br>
-              Chai<br>
-              Mocha Frappe<br>
-              Thai Cappuccino<br>
-              Thai Tea<br>
-              Iced Tea<br>
-            </h5>
-          </div>
-          <h6 class="drop-down">
-            <select>
-              <option value="0">Morrocan Mint</option>
-              <option value="1">Black Passion fruit</option>
-              <option value="2">Cucumber Mint Lemonade</option>
-            </select>
-          </h6>
-          <div class="prices">
-            <h5>
-              Sm.<br>
-              ….<br>
-              2.00<br>
-              3.55<br>
-              3.75<br>
-              3.25<br>
-              ….<br>
-              ….<br>
-              ….<br>
-              ….<br>
-            </h5>
-            <h5>
-              Med.<br>
-              2.75<br>
-              2.50<br>
-              3.95<br>
-              4.25<br>
-              3.95<br>
-              4.50<br>
-              4.25<br>
-              3.25<br>
-              2.50<br>
-            </h5>
-            <h5>
-              Lrg.<br>
-              ….<br>
-              3.25<br>
-              4.75<br>
-              5.00<br>
-              4.25<br>
-              5.50<br>
-              ….<br>
-              ….<br>
-              2.75<br>
-            </h5>
-          </div>
-        </div>
+      <div class="menu">
+        <section id="specials">
+          <div class="specials_text">
+            <div class="menu-header">
+              <h3>Specials<h3>
+              <h6>All specials are either double or triple shots</h6>
+            </div>
+              <div class="special-title">
+                Thai Iced Cappuccino
+              </div>
+              <div class="special-description">
+                <h4>Channel your inner exotic
+                spirit with a double shot of
+                espresso finished with
+                sweetened condensed milk</h4>
+              </div>
+              <div class="special-title">
+                Joyous Almond Latte
+              </div>
+              <div class="special-description">
+                <h4>Imagine drinking the candy
+                bar…only better</h4>
+              </div>
+              <div class="special-title">
+                Banana Nut Mocha
+              </div>
+              <div class="special-description">
+                <h4> You’ll go bananas!! It’s so
+                yum... Yep, just yum</h4>
+              </div>
+            </div>
+            <img class="menuimg-desktop" src="./img/menu-coffee_square.jpg" alt="lattes">
+        </section>
+        <hr>
+        <section id="drinks">
+          <h2 style="margin-left: 20px;">Drinks<h2>
           <div class="menu-header">
-            <h3 style="line-height: 0px; padding-top: 20px;">Hot<h3>
+            <h3>Iced<h3>
+            <h6>$1 refills iced teas and iced coffees when
+            you keep your cup!</h6>
           </div>
-          <div class="hot-menu">
-            <h5 class="drinks">
-              &nbsp; <br>
-              Drip Coffee<br>
-              Espresso<br>
-              Macchiato<br>
-              Americano<br>
-              Cappuccino<br>
-              Caffe Latte<br>
-              Caffe Mocha<br>
-              Caramel Macchiato<br>
-              Hot Chocolate<br>
-              Chai<br>
-              Organic Tea<br>
-            </h5>
+          <div class="iced-menu">
+            <div class="drinks">
+              <h5>
+                &nbsp;<br>
+                Coffee <br>
+                Americano<br>
+                Latte<br>
+                Mocha<br>
+                Chai<br>
+                Mocha Frappe<br>
+                Thai Cappuccino<br>
+                Thai Tea<br>
+                Iced Tea<br>
+              </h5>
+            </div>
             <h6 class="drop-down">
-              Black<br>
-              Green<br>
-              Earl grey<br>
-              Jasmine<br>
-              Raspberry Pomegranate<br>
-              Chamomile<br>
-              Lemon Ginger<br>
-              Mint<br>
-              English Breakfast Chai<br>
-              Yerba Mate<br>
+              <select>
+                <option value="0">Morrocan Mint</option>
+                <option value="1">Black Passion fruit</option>
+                <option value="2">Cucumber Mint Lemonade</option>
+              </select>
             </h6>
             <div class="prices">
               <h5>
@@ -268,118 +208,230 @@
               </h5>
               <h5>
                 Med.<br>
-                2.50<br>
                 2.75<br>
-                3.85<br>
                 2.50<br>
-                3.50<br>
                 3.95<br>
                 4.25<br>
-                4.45<br>
-                3.75<br>
                 3.95<br>
-                ….<br>
+                4.50<br>
+                4.25<br>
+                3.25<br>
+                2.50<br>
               </h5>
               <h5>
                 Lrg.<br>
-                2.75<br>
-                3.35<br>
-                3.35<br>
+                ….<br>
                 3.25<br>
-                4.25<br>
                 4.75<br>
                 5.00<br>
-                5.05<br>
                 4.25<br>
-                4.25<br>
+                5.50<br>
                 ….<br>
+                ….<br>
+                2.75<br>
               </h5>
             </div>
           </div>
-          <div class="title-1">
-            Add Emergen C +$1
+            <div class="menu-header">
+              <h3 style="line-height: 0px; padding-top: 20px;">Hot<h3>
+            </div>
+            <div class="hot-menu">
+              <div class="drinks">
+                <h5>
+                  <div class="margin">
+                    &nbsp; <br>
+                    Drip Coffee<br>
+                    Espresso<br>
+                    Macchiato<br>
+                    Americano<br>
+                    Cappuccino<br>
+                    Caffe Latte<br>
+                    Caffe Mocha<br>
+                    Caramel Macchiato<br>
+                    Hot Chocolate<br>
+                    Chai<br>
+                  </div>
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Organic Tea</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <p>Black</p>
+                      <p>Green</p>
+                      <p>Earl grey</p>
+                      <p>Jasmine</p>
+                      <p>Raspberry Pomegranate</p>
+                      <p>Chamomile</p>
+                      <p>Lemon Ginger</p>
+                      <p>Mint</p>
+                      <p>English Breakfast Chai</p>
+                      <p>Yerba Mate</p>
+                    </div>
+                  </div>
+                </div>
+                <script>
+                  /* When the user clicks on the button,
+                  toggle between hiding and showing the dropdown content */
+                  function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                  }
+
+                  // Close the dropdown menu if the user clicks outside of it
+                  window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                      var dropdowns = document.getElementsByClassName("dropdown-content");
+                      var i;
+                      for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                          openDropdown.classList.remove('show');
+                        }
+                      }
+                    }
+                  }</script>
+              <h6 class="drop-down">
+                Black<br>
+                Green<br>
+                Earl grey<br>
+                Jasmine<br>
+                Raspberry Pomegranate<br>
+                Chamomile<br>
+                Lemon Ginger<br>
+                Mint<br>
+                English Breakfast Chai<br>
+                Yerba Mate<br>
+              </h6>
+              <div class="prices">
+                <h5>
+                  Sm.<br>
+                  2.15<br>
+                  2.25<br>
+                  2.35<br>
+                  2.00<br>
+                  2.95<br>
+                  3.55<br>
+                  3.75<br>
+                  3.95<br>
+                  3.25<br>
+                  3.25<br>
+                  2.50
+                </h5>
+                <h5>
+                  Med.<br>
+                  2.50<br>
+                  2.75<br>
+                  3.85<br>
+                  2.50<br>
+                  3.50<br>
+                  3.95<br>
+                  4.25<br>
+                  4.45<br>
+                  3.75<br>
+                  3.95<br>
+                  ….<br>
+                </h5>
+                <h5>
+                  Lrg.<br>
+                  2.75<br>
+                  3.35<br>
+                  3.35<br>
+                  3.25<br>
+                  4.25<br>
+                  4.75<br>
+                  5.00<br>
+                  5.05<br>
+                  4.25<br>
+                  4.25<br>
+                  ….<br>
+                </h5>
+              </div>
+            </div>
+            <div class="title-1">
+              Add Emergen C +$1
+            </div>
+            <div class="content">
+              orange or raspberry
+            </div>
+            <div class="title-1">
+              Milk Alternatives
+            </div>
+            <div class="content">
+              Almond milk + .75 <br>
+              Soy milk +.50
+            </div>
+        </section>
+        <hr>
+        <section id="food">
+          <h2 style="margin-left: 20px; padding-top: 20px;">Food<h2>
+          <div class="menu-header">
+            <h6 style="margin-top:3px;">Extended food menu
+            available on location</h6>
+            <h3 style="line-height: 25px;">Panini Grilled Sandwiches $6.75<h3>
           </div>
-          <div class="content">
-            orange or raspberry
+          <div class="special-title">
+            Italiano
           </div>
-          <div class="title-1">
-            Milk Alternatives
+          <div class="special-description">
+            <h4>Grilled baguette with
+            prosciutto, mozzarella, sliced
+            tomato, basil pesto and a
+            touch of balsamic vinegar</h4>
           </div>
-          <div class="content">
-            Almond milk + .75 <br>
-            Soy milk +.50
+          <div class="special-title">
+            Seville
           </div>
+          <div class="special-description">
+            <h4>Grilled baguette with
+            Spanish chorizo, mozzarella
+            sliced tomato, roasted red
+            pepper, sun dried tomato
+            pesto and a touch of
+            balsamic vinegar</h4>
+          </div>
+          <div class="special-title">
+            Milano
+          </div>
+          <div class="special-description">
+            <h4>Grilled baguette with
+            prosciutto, salami, ham
+            mozzarella, sliced tomato,
+            pepperoncini, basil pesto and
+            a touch of balsamic vinegar</h4>
+          </div>
+          <div class="special-title">
+            Caprese
+          </div>
+          <div class="special-description">
+            <h4>Grilled baguette with
+            mozzarella, sliced tomato,
+            fresh basil, basil pesto and a
+            touch of balsamic vinegar</h4>
+          </div>
+          <div class="special-title">
+            Vegetarian Panini
+          </div>
+          <div class="special-description">
+            <h4> Grilled herb focaccia with
+            mozzarella, feta, roasted red
+            peppers, marinated
+            artichoke, tomato, red onion
+            and basil pesto</h4>
+          </div>
+          <div class="special-title">
+            Mediterranean Chicken
+          </div>
+          <div class="special-description">
+            <h4>Grilled focaccia with spiced
+            chicken breast, mozzarella,
+            roasted red peppers, tomato
+            and sun dried tomato pesto</h4>
+          </div>
+        </section>
+      </div>
       </section>
-      <hr>
-      <section id="food">
-        <h2 style="margin-left: 20px; padding-top: 20px;">Food<h2>
-        <div class="menu-header">
-          <h6 style="margin-top:3px;">Extended food menu
-          available on location</h6>
-          <h3 style="line-height: 25px;">Panini Grilled Sandwiches $6.75<h3>
-        </div>
-        <div class="special-title">
-          Italiano
-        </div>
-        <div class="special-description">
-          <h4>Grilled baguette with
-          prosciutto, mozzarella, sliced
-          tomato, basil pesto and a
-          touch of balsamic vinegar</h4>
-        </div>
-        <div class="special-title">
-          Seville
-        </div>
-        <div class="special-description">
-          <h4>Grilled baguette with
-          Spanish chorizo, mozzarella
-          sliced tomato, roasted red
-          pepper, sun dried tomato
-          pesto and a touch of
-          balsamic vinegar</h4>
-        </div>
-        <div class="special-title">
-          Milano
-        </div>
-        <div class="special-description">
-          <h4>Grilled baguette with
-          prosciutto, salami, ham
-          mozzarella, sliced tomato,
-          pepperoncini, basil pesto and
-          a touch of balsamic vinegar</h4>
-        </div>
-        <div class="special-title">
-          Caprese
-        </div>
-        <div class="special-description">
-          <h4>Grilled baguette with
-          mozzarella, sliced tomato,
-          fresh basil, basil pesto and a
-          touch of balsamic vinegar</h4>
-        </div>
-        <div class="special-title">
-          Vegetarian Panini
-        </div>
-        <div class="special-description">
-          <h4> Grilled herb focaccia with
-          mozzarella, feta, roasted red
-          peppers, marinated
-          artichoke, tomato, red onion
-          and basil pesto</h4>
-        </div>
-        <div class="special-title">
-          Mediterranean Chicken
-        </div>
-        <div class="special-description">
-          <h4>Grilled focaccia with spiced
-          chicken breast, mozzarella,
-          roasted red peppers, tomato
-          and sun dried tomato pesto</h4>
-        </div>
-      </section>
-      <section id="locations">
-        <img class="banner" src="./img/locations_banner.jpg" alt="coffee on table">
-        <h1>Locations</h1>
+      </div>
+    <section id="locations">
+      <img class="banner" src="./img/locations_banner.jpg" alt="coffee on table">
+      <h1>Locations</h1>
+      <div class="locations_container">
         <div class="locationsinfo locationlinks">
           <h4>
             Charlie’s Café, one of Sun
@@ -395,68 +447,69 @@
             &nbsp;<br>
             <a class="link" href="https://www.facebook.com/charliescafeasu/" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp; Charlies Cafe</a></h4>
           </div>
-        <div class="margin">
-        <div class="bio-location">
-          <h3 style="line-height: 27px;">
-            Inside ASU
-            Biodesign Institute</h3>
-          <h4>&nbsp;<br>
-            <a class="link" href="https://goo.gl/maps/PE7acefuC7nHbbqi8" target="_blank">
-              727 E Tyler St,
-              Tempe, AZ 85281
-            </a>
-          </h4>
-            &nbsp;<br>
-          <h4>
-            +14809653515</h4>
-          <h3>
-            Hours:</h3>
-          <h4>
-            Mon-Thurs: 7AM-4PM<br>
-            Fri: 7AM-2PM<br>
-            Sat-Sun: CLOSED</h4>
-        </div>
-        <hr>
-        <div class="hayden-location">
-          <h3 style="line-height: 27px;">
-            Inside ASU
-            Hayden Library</h3>
-          <h4>&nbsp;<br>
-            <a href="https://goo.gl/maps/A6Fxb7ozXFssYQEA9" target="_blank" class="link">
-              300 Orange Mall,
-              Tempe, AZ 85281
-            </a>
-          </h4>
-            &nbsp;<br>
-          <h4>
-            +14809653605</h4>
-          <h3>
-            Hours:</h3>
-          <h4>
-            Mon-Fri: 7AM-3PM <br>
-            Sat-Sun: CLOSED</h4>
-        </div>
-        <hr>
-        <div class="design-location">
-          <h3 style="line-height: 27px;">
-            Inside ASU
-            Design North</h3>
-          <h4>&nbsp;<br>
-            <a href="https://goo.gl/maps/yF4dSP1ax2eqwEwU6" target="_blank" class="link">
-              810 S Forest Mall,
-              Tempe, AZ 85281
-            </a>
-          </h4>
-          <h4>
-            &nbsp;<br>
-            +14807273463</h4>
-          <h3>
-            Hours:</h3>
-          <h4>
-            Mon-Thurs: 7AM-7PM<br>
-            Fri: 7AM-4PM<br>
-            Sat-Sun: CLOSED</h4>
-            &nbsp;<br>
+        <div class="margin locations_container2">
+          <div class="bio-location">
+            <h3 style="line-height: 27px;">
+              Inside ASU
+              Biodesign Institute</h3>
+            <h4>&nbsp;<br>
+              <a class="link" href="https://goo.gl/maps/PE7acefuC7nHbbqi8" target="_blank">
+                727 E Tyler St,
+                Tempe, AZ 85281
+              </a>
+            </h4>
+              &nbsp;<br>
+            <h4>
+              +14809653515</h4>
+            <h3>
+              Hours:</h3>
+            <h4>
+              Mon-Thurs: 7AM-4PM<br>
+              Fri: 7AM-2PM<br>
+              Sat-Sun: CLOSED</h4>
+          </div>
+          <hr>
+          <div class="hayden-location">
+            <h3 style="line-height: 27px;">
+              Inside ASU
+              Hayden Library</h3>
+            <h4>&nbsp;<br>
+              <a href="https://goo.gl/maps/A6Fxb7ozXFssYQEA9" target="_blank" class="link">
+                300 Orange Mall,
+                Tempe, AZ 85281
+              </a>
+            </h4>
+              &nbsp;<br>
+            <h4>
+              +14809653605</h4>
+            <h3>
+              Hours:</h3>
+            <h4>
+              Mon-Fri: 7AM-3PM <br>
+              Sat-Sun: CLOSED</h4>
+          </div>
+          <hr>
+          <div class="design-location">
+            <h3 style="line-height: 27px;">
+              Inside ASU
+              Design North</h3>
+            <h4>&nbsp;<br>
+              <a href="https://goo.gl/maps/yF4dSP1ax2eqwEwU6" target="_blank" class="link">
+                810 S Forest Mall,
+                Tempe, AZ 85281
+              </a>
+            </h4>
+            <h4>
+              &nbsp;<br>
+              +14807273463</h4>
+            <h3>
+              Hours:</h3>
+            <h4>
+              Mon-Thurs: 7AM-7PM<br>
+              Fri: 7AM-4PM<br>
+              Sat-Sun: CLOSED</h4>
+              &nbsp;<br>
+          </div>
         </div>
       </div>
     </section>
@@ -464,20 +517,24 @@
       <img class="banner" src="./img/ourstory_banner.jpg" alt="man handing woman food outside">
       <h1>Our Story</h1>
       <div class="margin">
-      <h4>Here at Charlie’s Cafe we understand not only
-        the importance of quality beverages, but also the
-        importance of community. We strive to create a positive
-        experience for all of our customers by creating genuine
-        connections with our guests, timely service, and
-        providing a community space for all of our customers
-        to collaborate and create. Charlie’s is more
-        than coffee, we are a community.</h4>
+        <div class="ourstory-container">
+          <h4 class="ourstory-text">Here at Charlie’s Cafe we understand not only
+            the importance of quality beverages, but also the
+            importance of community. We strive to create a positive
+            experience for all of our customers by creating genuine
+            connections with our guests, timely service, and
+            providing a community space for all of our customers
+            to collaborate and create. Charlie’s is more
+            than coffee, we are a community.</h4>
+        <img src="./img/mustache.png" class="mustache" alt="charlie's mustache"
+        </div>
         </div>
       </section>
       &nbsp;
     <footer>
     <h4 class="bar"><a class="link" href="#header">back to top</a></h4>
     <div class="margin">
+      &nbsp; <br>
       <h4><a href="https://www.facebook.com/charliescafeasu/" target="_blank"><i class="fab fa-facebook-square red"></i></a></h4>
       <h4> Do you love Charlie’s? Tell us about it!<br>
         <a href="https://www.yelp.com/biz/charlies-cafe-tempe?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank"><i class="fab fa-yelp"></i></a>
