@@ -25,7 +25,7 @@
         </div>
         <div class="desktop-nav">
           <a href="#menu">Menu</a>
-          <a href="#location">Location</a>
+          <a href="#locations">Location</a>
           <a href="#our-story">Our Story</a>
           <a href="#contact-us">Contact Us</a>
         </div>
@@ -54,7 +54,7 @@
               local restaurant partners, brings the taste of Europe
               to ASU! Proudly serving Lavazza Italian espresso and
               fresh European sandwiches and baked goods.</div>
-            <div class="sliderbutton"><button>Explore our drink menu!</button></div>
+            <div class="sliderbutton"><a href="#drinks"><button>Explore our drink menu!</button></a></div>
             <div class="slider-dots" style="text-align:center">
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
@@ -67,7 +67,7 @@
             <div class="text">With locations in the heart of ASU,
               Charlie’s cafe provides delicious, high quality drinks
               and food for the ASU community. Stop by to fuel your next study session!</div>
-            <div class="sliderbutton"><button>Find a location<br>near you!</button></div>
+            <div class="sliderbutton"><a href="#locations"><button>Find a location<br>near you!</button></a></div>
             <div class="slider-dots" style="text-align:center">
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
@@ -78,7 +78,7 @@
           <div class="mySlides fade">
             <img src="./img/review_slider.jpg" style="width:100%">
             <div class="text">Do you love Charlie’s Cafe? We want to hear about it!</div>
-            <div class="sliderbutton"><button>Leave a<br>review</button></div>
+            <div class="sliderbutton"><a href="#contact-us"><button>Leave a<br>review</button></a></div>
             <div class="slider-dots" style="text-align:center">
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
@@ -162,6 +162,7 @@
               </div>
             </div>
             <img class="menuimg-desktop" src="./img/menu-coffee_square.jpg" alt="lattes">
+          </div>
         </section>
         <hr>
         <section id="drinks">
@@ -174,25 +175,47 @@
           <div class="iced-menu">
             <div class="drinks">
               <h5>
-                &nbsp;<br>
-                Coffee <br>
-                Americano<br>
-                Latte<br>
-                Mocha<br>
-                Chai<br>
-                Mocha Frappe<br>
-                Thai Cappuccino<br>
-                Thai Tea<br>
-                Iced Tea<br>
+                <div class="margin">
+                  &nbsp;<br>
+                  Coffee <br>
+                  Americano<br>
+                  Latte<br>
+                  Mocha<br>
+                  Chai<br>
+                  Mocha Frappe<br>
+                  Thai Cappuccino<br>
+                  Thai Tea<br>
+                </div>
+                <div class="iceddropdown">
+                  <p onclick="iceddropdown()" class="iceddropbtn">Iced Tea	&#8964;</span></p>
+                  <div id="icedmyDropdown" class="iceddropdown-content">
+                    <p>Moroccan Mint</p>
+                    <p>Black Passion Fruit</p>
+                    <p>Cucumber Mint Lemonade</p>
+                  </div>
+                </div>
               </h5>
             </div>
-            <h6 class="drop-down">
-              <select>
-                <option value="0">Morrocan Mint</option>
-                <option value="1">Black Passion fruit</option>
-                <option value="2">Cucumber Mint Lemonade</option>
-              </select>
-            </h6>
+              <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function iceddropdown() {
+                  document.getElementById("icedmyDropdown").classList.toggle("show");
+                }
+
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.iceddropbtn')) {
+                    var dropdowns = document.getElementsByClassName("iceddropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }</script>
             <div class="prices">
               <h5>
                 Sm.<br>
@@ -252,7 +275,7 @@
                     Chai<br>
                   </div>
                   <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Organic Tea</button>
+                    <p onclick="hotdropdown()" class="dropbtn">Organic Tea &#8964;</span></p>
                     <div id="myDropdown" class="dropdown-content">
                       <p>Black</p>
                       <p>Green</p>
@@ -266,11 +289,12 @@
                       <p>Yerba Mate</p>
                     </div>
                   </div>
-                </div>
+                </h5>
+              </div>
                 <script>
                   /* When the user clicks on the button,
                   toggle between hiding and showing the dropdown content */
-                  function myFunction() {
+                  function hotdropdown() {
                     document.getElementById("myDropdown").classList.toggle("show");
                   }
 
@@ -287,18 +311,6 @@
                       }
                     }
                   }</script>
-              <h6 class="drop-down">
-                Black<br>
-                Green<br>
-                Earl grey<br>
-                Jasmine<br>
-                Raspberry Pomegranate<br>
-                Chamomile<br>
-                Lemon Ginger<br>
-                Mint<br>
-                English Breakfast Chai<br>
-                Yerba Mate<br>
-              </h6>
               <div class="prices">
                 <h5>
                   Sm.<br>
@@ -441,9 +453,9 @@
           </h4>
           <h3>Contact us!</h3>
           <h4>
-            <a class="link"href="#">charliescafesm@outlook.com</a><br>
+            <a href="mailto:charliescafesm@outlook.com?subject=Contact Us!"class="link">Contact us!</a><br>
             &nbsp;<br>
-            <a class="link"href="instagram.com"><i class="fab fa-instagram "></i> &nbsp; CharliesCafe.ASU</a><br>
+            <a class="link" href="https://www.instagram.com/charliescafe.asu/"><i class="fab fa-instagram "></i> &nbsp; CharliesCafe.ASU</a><br>
             &nbsp;<br>
             <a class="link" href="https://www.facebook.com/charliescafeasu/" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp; Charlies Cafe</a></h4>
           </div>
@@ -535,7 +547,9 @@
     <h4 class="bar"><a class="link" href="#header">back to top</a></h4>
     <div class="margin">
       &nbsp; <br>
-      <h4><a href="https://www.facebook.com/charliescafeasu/" target="_blank"><i class="fab fa-facebook-square red"></i></a></h4>
+      <h4><a href="https://www.facebook.com/charliescafeasu/" target="_blank"><i class="fab fa-facebook-square red"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="link" href="https://www.instagram.com/charliescafe.asu/"><i class="fab fa-instagram red"></i></a></h4>
       <h4> Do you love Charlie’s? Tell us about it!<br>
         <a href="https://www.yelp.com/biz/charlies-cafe-tempe?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank"><i class="fab fa-yelp"></i></a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
