@@ -75,6 +75,7 @@ hr {
   width: 64%;
   margin: 20px;
   height: auto;
+  max-width: 250px;
 }
 .ham-nav {
   display: inline;
